@@ -85,7 +85,7 @@ struct __fehoptions {
     unsigned char insecure_ssl;
     unsigned char filter_by_dimensions;
     unsigned char edit;
-    unsigned char disable_click_to_advance;
+    unsigned char enable_click_to_advance;
 
     char *output_file;
     char *output_dir;
