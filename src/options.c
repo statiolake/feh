@@ -430,6 +430,7 @@ static void feh_parse_option_array(int argc, char **argv, int finalrun)
 #ifdef HAVE_INOTIFY
 		{"auto-reload"   , 0, 0, 248},
 #endif
+		{"disable_click_to_advance", 0, 0, 248},
 		{0, 0, 0, 0}
 	};
 	int optch = 0, cmdx = 0;
@@ -823,6 +824,9 @@ static void feh_parse_option_array(int argc, char **argv, int finalrun)
 			opt.auto_reload = 1;
 			break;
 #endif
+		case 248:
+			opt.disable_click_to_advance = 1;
+			break;
 		default:
 			break;
 		}
